@@ -10,13 +10,24 @@
   <div class="container">
     <h1>Vowel Checker</h1>
     <br>
-    <input type="text" id="inputText" placeholder="Enter a word or sentence" />
+    <input type="text" id="inputText" placeholder="Enter some text here " />
     <br><br>
-    <button id="btn">Check Vowels</button>
+    <button onclick="checkVowels()" >Check Vowels</button>
+<br><br>
+    <!-- <button class="restart" id="Clear">Clear</button> -->
+
+    <!-- Clear button -->
+    <button onclick="document.getElementById('inputText').value = '';">Clear</button>
+
   <br> <br> 
     <div id="result" class="result"></div>
     <div id="error" class="error"></div>
   </div>
+
+  <!-- Extra -->
+ <!-- Element to be removed on click
+        <button onclick="this.remove()">Click me to remove</button> -->
+
 
   <script src="./script.js"></script>
 </body>
